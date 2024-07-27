@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <UserSecretsId>dotnet-SensorTelemetryService-53a5fbbc-186f-4443-af81-cce562d76b78</UserSecretsId>
     <CodeAnalysisRuleSet>..\Analyzers.ruleset</CodeAnalysisRuleSet>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <UserSecretsId>dotnet-SensorTelemetryService-53a5fbbc-186f-4443-af81-cce562d76b78</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -5,9 +5,19 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorTelemetryService", "SensorTelemetryService\SensorTelemetryService.csproj", "{FA303A68-220D-474B-A88D-2CAC5F248A95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorTelemetryService.AppHost", "SensorTelemetryService.AppHost\SensorTelemetryService.AppHost.csproj", "{F9657C34-E476-4BCB-8FA2-6446D00C2EF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorTelemetryService.AppHost", "SensorTelemetryService.AppHost\SensorTelemetryService.AppHost.csproj", "{F9657C34-E476-4BCB-8FA2-6446D00C2EF9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorTelemetryService.ServiceDefaults", "SensorTelemetryService.ServiceDefaults\SensorTelemetryService.ServiceDefaults.csproj", "{B34F3261-EDE7-4D9F-87C3-F0063FB9ED1F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DECC9D3F-82BE-4BC3-833F-2E94E66EAB82}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Analyzers.ruleset = Analyzers.ruleset
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +33,6 @@ Global
 		{F9657C34-E476-4BCB-8FA2-6446D00C2EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9657C34-E476-4BCB-8FA2-6446D00C2EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9657C34-E476-4BCB-8FA2-6446D00C2EF9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B34F3261-EDE7-4D9F-87C3-F0063FB9ED1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B34F3261-EDE7-4D9F-87C3-F0063FB9ED1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B34F3261-EDE7-4D9F-87C3-F0063FB9ED1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B34F3261-EDE7-4D9F-87C3-F0063FB9ED1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

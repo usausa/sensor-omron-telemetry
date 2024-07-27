@@ -1,13 +1,17 @@
 using System.Runtime.InteropServices;
 
+using OpenTelemetry;
 using OpenTelemetry.Metrics;
 using OpenTelemetryExtension.Instrumentation.SensorOmron;
 
 using SensorTelemetryService;
 
+using Serilog;
+
 // Builder
 Directory.SetCurrentDirectory(AppContext.BaseDirectory);
 var builder = Host.CreateApplicationBuilder(args);
+var useOtlpExporter = !String.IsNullOrWhiteSpace(builder.Configuration["OTEL_EXPORTER_OTLP_ENDPOINT"]);
 
 // Setting
 var setting = builder.Configuration.GetSection("Service").Get<ServiceSetting>()!;
@@ -18,6 +22,11 @@ builder.Services
     .AddSystemd();
 
 // Logging
+builder.Logging.ClearProviders();
+builder.Services.AddSerilog(options =>
+{
+    options.ReadFrom.Configuration(builder.Configuration);
+}, writeToProviders: useOtlpExporter);
 
 // Metrics
 builder.Services
@@ -30,6 +39,10 @@ builder.Services
         {
             options.UriPrefixes = setting.EndPoints;
         });
+        if (useOtlpExporter)
+        {
+            builder.Services.AddOpenTelemetry().UseOtlpExporter();
+        }
     });
 
 //builder.AddServiceDefaults();

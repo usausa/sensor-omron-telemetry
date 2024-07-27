@@ -45,9 +45,6 @@ builder.Services
         }
     });
 
-//builder.AddServiceDefaults();
-// TODO
-
 // Build
 var host = builder.Build();
 

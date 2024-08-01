@@ -1,7 +1,5 @@
 namespace SensorTelemetryService;
 
-using OpenTelemetryExtension.Instrumentation.SensorOmron;
-
 #pragma warning disable CA1819
 public sealed class ServiceSetting
 {

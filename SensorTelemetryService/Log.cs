@@ -1,7 +1,5 @@
 namespace SensorTelemetryService;
 
-using System.Runtime;
-
 internal static partial class Log
 {
     // Startup

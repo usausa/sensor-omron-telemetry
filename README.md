@@ -1,3 +1,3 @@
-# SensorTelemetryService
+# sensor-omron-telemetry
 
-.NET version of https://github.com/usausa/sensor-omron
+The new version is [telemetry-service](https://github.com/usausa/telemetry-service).

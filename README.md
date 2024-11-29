@@ -1,3 +1,3 @@
-# sensor-omron-telemetry
+# Please use this from now on
 
-The new version is [telemetry-service](https://github.com/usausa/telemetry-service).
+- [prometheus-exporter-alternative](https://github.com/usausa/prometheus-exporter-alternative)
